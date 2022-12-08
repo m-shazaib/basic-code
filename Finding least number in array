@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double  least = 9999999999999999999, array[4][5];
+
+	for (int row = 0; row < 4; row++)
+	{
+		for (int col = 0; col < 5; col++)
+		{
+			cout << "Enter Number for array [" << row << "] [" << col << "] = ";
+			cin >> array[row][col];
+			if (array[row][col] < least)
+			{
+				least = array[row][col];
+			}
+      else if(array[row][col])
+      {
+          least=array[row][col];
+      }
+		}
+	}
+	cout << "The least number is " << least << endl;
+
+}
