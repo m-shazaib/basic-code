@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int  odd=0, even = 0, array[6][7], storage;
+
+	for (int row = 0; row < 6; row++)
+	{
+		for (int col = 0; col < 7; col++)
+		{
+			cout << "Enter Number for array [" << row << "] [" << col << "] = ";
+			cin >> array[row][col];
+			
+			if (array[row][col] %2==0)
+			{
+				even++;
+			}
+			else if (array[row][col] % 2 != 0)
+			{
+				odd++;
+			}
+		}
+	}
+	cout << "The odd numbers in array is " <<odd  << endl;
+	cout << "The odd numbers in array is " << even << endl;
+}
