@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
 	int  odd=0, even = 0, array[6][7], storage;
+//define array if u need to
 
 	for (int row = 0; row < 6; row++)
 	{
